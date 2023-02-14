@@ -25,6 +25,7 @@
 		CE046EFD299A847500BBE9C7 /* CustomDecodableSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046EFC299A847500BBE9C7 /* CustomDecodableSerializer.swift */; };
 		CE046EFF299A862E00BBE9C7 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046EFE299A862E00BBE9C7 /* DataRequest.swift */; };
 		CE046F01299A872B00BBE9C7 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046F00299A872B00BBE9C7 /* RequestRouter.swift */; };
+		CE4167A5299BAD9C00AA461A /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167A4299BAD9C00AA461A /* LogoutResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CE046EFC299A847500BBE9C7 /* CustomDecodableSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDecodableSerializer.swift; sourceTree = "<group>"; };
 		CE046EFE299A862E00BBE9C7 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		CE046F00299A872B00BBE9C7 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		CE4167A4299BAD9C00AA461A /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				CE046EE9299A769F00BBE9C7 /* User.swift */,
 				CE046EEB299A76F000BBE9C7 /* LoginResult.swift */,
+				CE4167A4299BAD9C00AA461A /* LogoutResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			files = (
 				CE046EEC299A76F000BBE9C7 /* LoginResult.swift in Sources */,
 				CE046EFF299A862E00BBE9C7 /* DataRequest.swift in Sources */,
+				CE4167A5299BAD9C00AA461A /* LogoutResult.swift in Sources */,
 				CE046EA9299A667700BBE9C7 /* AppDelegate.swift in Sources */,
 				CE046EF2299A7B7800BBE9C7 /* AuthRequestFactory.swift in Sources */,
 				CE046EF6299A7E7700BBE9C7 /* RequestFactory.swift in Sources */,
