@@ -26,6 +26,7 @@
 		CE046EFF299A862E00BBE9C7 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046EFE299A862E00BBE9C7 /* DataRequest.swift */; };
 		CE046F01299A872B00BBE9C7 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE046F00299A872B00BBE9C7 /* RequestRouter.swift */; };
 		CE4167A5299BAD9C00AA461A /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167A4299BAD9C00AA461A /* LogoutResult.swift */; };
+		CE4167A7299BB2BE00AA461A /* RegistrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167A6299BB2BE00AA461A /* RegistrationResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CE046EFE299A862E00BBE9C7 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		CE046F00299A872B00BBE9C7 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		CE4167A4299BAD9C00AA461A /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
+		CE4167A6299BB2BE00AA461A /* RegistrationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				CE046EE9299A769F00BBE9C7 /* User.swift */,
 				CE046EEB299A76F000BBE9C7 /* LoginResult.swift */,
 				CE4167A4299BAD9C00AA461A /* LogoutResult.swift */,
+				CE4167A6299BB2BE00AA461A /* RegistrationResult.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				CE046EFB299A836B00BBE9C7 /* ErrorParser.swift in Sources */,
 				CE046EAB299A667700BBE9C7 /* SceneDelegate.swift in Sources */,
 				CE046EEA299A769F00BBE9C7 /* User.swift in Sources */,
+				CE4167A7299BB2BE00AA461A /* RegistrationResult.swift in Sources */,
 				CE046F01299A872B00BBE9C7 /* RequestRouter.swift in Sources */,
 				CE046EF4299A7C5500BBE9C7 /* Auth.swift in Sources */,
 				CE046EFD299A847500BBE9C7 /* CustomDecodableSerializer.swift in Sources */,
