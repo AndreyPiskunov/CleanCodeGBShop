@@ -12,10 +12,10 @@ protocol AuthRequestFactory {
     
     func login(userName: String,
                password: String,
-               completionHandler: @escaping (AFDataResponse<LoginResult>) -> Void)
+               completionHandler: @escaping (AFDataResponse<LoginUser>) -> Void)
     
     func logout(idUser: Int,
-                completionHandler: @escaping (AFDataResponse<LogoutResult>) -> Void)
+                completionHandler: @escaping (AFDataResponse<LogoutUser>) -> Void)
     
     func registration(idUser: Int,
                       userName: String,
@@ -24,6 +24,15 @@ protocol AuthRequestFactory {
                       gender: String,
                       creditCard: String,
                       bio: String,
-                      completionHandler: @escaping (AFDataResponse<RegistrationResult>) -> Void)
+                      completionHandler: @escaping (AFDataResponse<RegistrationUser>) -> Void)
+    
+    func changeData(idUser: Int,
+                    userName: String,
+                    password: String,
+                    email: String,
+                    gender: String,
+                    creditCard: String,
+                    bio: String,
+                    completionHandler: @escaping (AFDataResponse<ChangeUserData>) -> Void)
 }
 

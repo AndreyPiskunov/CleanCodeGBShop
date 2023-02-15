@@ -1,5 +1,5 @@
 //
-//  LogoutResult.swift
+//  RegistrationResult.swift
 //  GBShop
 //
 //  Created by Andrey Piskunov on 14.02.2023.
@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct LogoutResult: Codable {
+struct RegistrationUser: Codable {
     let result: Int
+    let userMessage: String
 }
