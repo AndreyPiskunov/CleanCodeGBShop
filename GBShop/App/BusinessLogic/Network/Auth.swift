@@ -27,37 +27,31 @@ class Auth: AbstractRequestFactory {
 
 extension Auth: AuthRequestFactory {
     
-    func registration(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: String, bio: String, completionHandler: @escaping (Alamofire.AFDataResponse<RegistrationUser>) -> Void) {
+    func registrationUser(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: String, bio: String, completionHandler: @escaping (Alamofire.AFDataResponse<RegistrationUser>) -> Void) {
         
         let requestModel = Registration(baseUrl: baseUrl, id: idUser, userName: userName, password: password, email: email, gender: gender, creditCard: creditCard, bio: bio)
-        
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func login(userName: String, password: String, completionHandler: @escaping
+    func loginUser(userName: String, password: String, completionHandler: @escaping
                (AFDataResponse<LoginUser>) -> Void) {
         
         let requestModel = Login(baseUrl: baseUrl, login: userName, password: password)
-        
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func logout(idUser: Int, completionHandler: @escaping
+    func logoutUser(idUser: Int, completionHandler: @escaping
                 (AFDataResponse<LogoutUser>) -> Void) {
         
         let requestModel = Logout(baseUrl: baseUrl, id: idUser)
-        
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func changeData(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: String, bio: String, completionHandler: @escaping (Alamofire.AFDataResponse<ChangeUserData>) -> Void) {
+    func changeUserData(idUser: Int, userName: String, password: String, email: String, gender: String, creditCard: String, bio: String, completionHandler: @escaping (Alamofire.AFDataResponse<ChangeUserData>) -> Void) {
         
         let requestModel = ChangeData(baseUrl: baseUrl, id: idUser, userName: userName, password: password, email: email, gender: gender, creditCard: creditCard, bio: bio)
-        
         self.request(request: requestModel, completionHandler: completionHandler)
     }
-    
-    
 }
 
 extension Auth {
