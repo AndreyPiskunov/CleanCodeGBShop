@@ -29,6 +29,10 @@
 		CE4167A7299BB2BE00AA461A /* RegistrationUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167A6299BB2BE00AA461A /* RegistrationUser.swift */; };
 		CE4167A9299CB6D300AA461A /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167A8299CB6D300AA461A /* ChangeUserData.swift */; };
 		CE4167AB299CBA0100AA461A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4167AA299CBA0100AA461A /* UserData.swift */; };
+		CE85816F299E80C700E00D58 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85816E299E80C700E00D58 /* ProductData.swift */; };
+		CE858171299FB27400E00D58 /* ProductRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE858170299FB27400E00D58 /* ProductRequestFactory.swift */; };
+		CE858173299FB4E800E00D58 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE858172299FB4E800E00D58 /* Product.swift */; };
+		CE858179299FF82400E00D58 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE858178299FF82400E00D58 /* ProductList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		CE4167A6299BB2BE00AA461A /* RegistrationUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUser.swift; sourceTree = "<group>"; };
 		CE4167A8299CB6D300AA461A /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 		CE4167AA299CBA0100AA461A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		CE85816E299E80C700E00D58 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		CE858170299FB27400E00D58 /* ProductRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactory.swift; sourceTree = "<group>"; };
+		CE858172299FB4E800E00D58 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CE858178299FF82400E00D58 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +184,12 @@
 			children = (
 				CE046EE9299A769F00BBE9C7 /* User.swift */,
 				CE4167AA299CBA0100AA461A /* UserData.swift */,
+				CE4167A8299CB6D300AA461A /* ChangeUserData.swift */,
 				CE046EEB299A76F000BBE9C7 /* LoginUser.swift */,
 				CE4167A4299BAD9C00AA461A /* LogoutUser.swift */,
 				CE4167A6299BB2BE00AA461A /* RegistrationUser.swift */,
-				CE4167A8299CB6D300AA461A /* ChangeUserData.swift */,
+				CE85816E299E80C700E00D58 /* ProductData.swift */,
+				CE858178299FF82400E00D58 /* ProductList.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -228,6 +238,8 @@
 			children = (
 				CE046EF3299A7C5500BBE9C7 /* Auth.swift */,
 				CE046EF1299A7B7800BBE9C7 /* AuthRequestFactory.swift */,
+				CE858172299FB4E800E00D58 /* Product.swift */,
+				CE858170299FB27400E00D58 /* ProductRequestFactory.swift */,
 				CE046EF5299A7E7700BBE9C7 /* RequestFactory.swift */,
 			);
 			path = Network;
@@ -390,13 +402,17 @@
 				CE046EF6299A7E7700BBE9C7 /* RequestFactory.swift in Sources */,
 				CE046EFB299A836B00BBE9C7 /* ErrorParser.swift in Sources */,
 				CE046EAB299A667700BBE9C7 /* SceneDelegate.swift in Sources */,
+				CE858171299FB27400E00D58 /* ProductRequestFactory.swift in Sources */,
 				CE046EEA299A769F00BBE9C7 /* User.swift in Sources */,
+				CE85816F299E80C700E00D58 /* ProductData.swift in Sources */,
 				CE4167A7299BB2BE00AA461A /* RegistrationUser.swift in Sources */,
 				CE046F01299A872B00BBE9C7 /* RequestRouter.swift in Sources */,
 				CE046EF4299A7C5500BBE9C7 /* Auth.swift in Sources */,
 				CE046EFD299A847500BBE9C7 /* CustomDecodableSerializer.swift in Sources */,
+				CE858173299FB4E800E00D58 /* Product.swift in Sources */,
 				CE4167A9299CB6D300AA461A /* ChangeUserData.swift in Sources */,
 				CE046EF9299A828100BBE9C7 /* AbstractErrorParser.swift in Sources */,
+				CE858179299FF82400E00D58 /* ProductList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
