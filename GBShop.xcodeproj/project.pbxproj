@@ -182,14 +182,8 @@
 		CE046EE3299A6DF700BBE9C7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				CE046EE9299A769F00BBE9C7 /* User.swift */,
-				CE4167AA299CBA0100AA461A /* UserData.swift */,
-				CE4167A8299CB6D300AA461A /* ChangeUserData.swift */,
-				CE046EEB299A76F000BBE9C7 /* LoginUser.swift */,
-				CE4167A4299BAD9C00AA461A /* LogoutUser.swift */,
-				CE4167A6299BB2BE00AA461A /* RegistrationUser.swift */,
-				CE85816E299E80C700E00D58 /* ProductData.swift */,
-				CE858178299FF82400E00D58 /* ProductList.swift */,
+				CEBC7DB229A2300000D6A7BD /* User */,
+				CEBC7DB329A2302B00D6A7BD /* Product */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -255,6 +249,28 @@
 				CE046F00299A872B00BBE9C7 /* RequestRouter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CEBC7DB229A2300000D6A7BD /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CE046EE9299A769F00BBE9C7 /* User.swift */,
+				CE4167AA299CBA0100AA461A /* UserData.swift */,
+				CE4167A8299CB6D300AA461A /* ChangeUserData.swift */,
+				CE046EEB299A76F000BBE9C7 /* LoginUser.swift */,
+				CE4167A4299BAD9C00AA461A /* LogoutUser.swift */,
+				CE4167A6299BB2BE00AA461A /* RegistrationUser.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CEBC7DB329A2302B00D6A7BD /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				CE85816E299E80C700E00D58 /* ProductData.swift */,
+				CE858178299FF82400E00D58 /* ProductList.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

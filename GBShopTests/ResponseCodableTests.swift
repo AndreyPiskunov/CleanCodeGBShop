@@ -123,7 +123,7 @@ final class ResponseCodableTests: XCTestCase {
             self.expectation.fulfill()
         }
         wait(for: [expectation], timeout: 10.0)
-                           
+        
         XCTAssertEqual(1, result)
         XCTAssertNotEqual(0, result)
     }
@@ -152,5 +152,24 @@ final class ResponseCodableTests: XCTestCase {
         
         XCTAssertEqual(1, result)
         XCTAssertNotEqual(0, result)
+    }
+    
+    func testProductShouldReturn() {
+        let product = requestFactory.makeProductRequestFactory()
+        let id = 123
+        var itemResult = 2
+        
+        product.getProduct(idProduct: id) { response in
+            switch response.result {
+            case .success(let item):
+                itemResult = item.result
+            case .failure:
+                XCTFail()
+            }
+            self.expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+        XCTAssertEqual(1, itemResult)
+        XCTAssertNotEqual(0, itemResult)
     }
 }
