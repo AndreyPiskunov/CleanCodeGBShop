@@ -15,41 +15,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let auth = requestFactory.makeAuthRequestFatory()
+        let auth = requestFactory.makeAuthRequestFactory()
+        let product = requestFactory.makeProductRequestFactory()
         
-        auth.login(userName: "Somebody", password: "mypassword") { response in
+        auth.loginUser(userName: "Somebody", password: "mypassword") { response in
             switch response.result {
-            case .success(let login):
-                print(login)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
         
-        auth.logout(idUser: 123) { response in
+        auth.logoutUser(idUser: 123) { response in
             switch response.result {
-            case .success(let logout):
-                print(logout)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
 
-        auth.registration(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
+        auth.registrationUser(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
             switch response.result {
-            case .success(let registration):
-                print(registration)
+            case .success(let result):
+                print(result)
             case .failure(let error):
                 print(String(describing: error))
                 print(error.localizedDescription)
             }
         }
         
-        auth.changeData(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
+        auth.changeUserData(idUser: 123, userName: "Somebody", password: "mypassword", email: "some@some.ru", gender: "m", creditCard: "9872389-2424-234224-234", bio: "This is good! I think I will switch to another language") { response in
             switch response.result {
-            case .success(let registration):
-                print(registration)
+            case .success(let result):
+                print(result)
             case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        product.getProduct(idProduct: 123) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+
+        product.getProductCatalog(pageNumber: 1, idCategory: 1) { response in
+            switch response.result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                
                 print(error.localizedDescription)
             }
         }
